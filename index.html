@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guaraná Antarctica - O Original do Brasil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Montserrat:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="top-nav">
+        <div class="nav-logo">
+            <img src="img/logo.png" alt="Logo Guaraná Antarctica">
+        </div>
+        <ul>
+            <li><a href="#">PRODUTOS</a></li>
+            <li><a href="historia.html">HISTÓRIA</a></li>
+            <li><a href="maues.html">MAUÉS, AMAZÔNIA</a></li>
+        </ul>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1 class="title">O ORIGINAL<br>DO BRASIL</h1>
+            <p class="subtitle">Desde 1921, feito com guaraná<br>100% natural da Amazônia</p>
+
+            <div class="buttons">
+                <button type="button" id="btn-open-cep-modal" class="btn" style="border: 2px solid #4CAF50; color: #fff; background: rgba(76, 175, 80, 0.4); justify-content: center; cursor: pointer;">Acesse sua Localização</button>
+            </div>
+        </div>
+
+        <div class="hero-images scene">
+            <img src="img/garrafa_grande_transparent.png" alt="Garrafa 2L de Guaraná"
+                class="bottle parallax-el float-anim-reverse" data-speed="5">
+            <img src="img/lata.png" alt="Lata 350ml Original" class="can parallax-el float-anim" data-speed="3">
+        </div>
+
+        <!-- Menu social removido a pedido do usuário -->
+    </main>
+
+    <section id="nossos-produtos" class="produtos-section reveal">
+        <div class="linha-produtos">
+
+            <div class="item-produto bg-verde-1">
+                <img src="img/pitulinha.png" alt="Guaraná Pequeno" class="prod-img">
+                <div class="prod-text">GUARANÁ PITULINHA</div>
+                <img src="img/folha.png" class="folha-deco folha-esq" alt="">
+            </div>
+
+            <div class="item-produto bg-verde-2">
+                <img src="img/garrafa_grande_transparent.png" alt="Guaraná 2L" class="prod-img">
+                <div class="prod-text">GUARANÁ 2 LITROS</div>
+            </div>
+
+            <div class="item-produto bg-verde-3">
+                <img src="img/lata.png" alt="Lata Original" class="prod-img">
+                <div class="prod-text">GUARANÁ LATA 350ML</div>
+            </div>
+
+            <div class="item-produto bg-verde-4">
+                <img src="img/lata-zero.png" alt="Lata Zero" class="prod-img">
+                <div class="prod-text">GUARANÁ ZERO 350ML</div>
+                <img src="img/folha.png" class="folha-deco folha-dir" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="wandinha-section reveal">
+        <img src="img/fundowandinha.png" alt="Fundo Sombrio" class="bg-wandinha">
+
+        <div class="wandinha-content">
+            <h2 class="title" style="font-size: 5rem; text-align: center; margin-bottom: 20px;">A SEDE VOLTOU</h2>
+            <a href="cep.html" class="btn"
+                style="border: 2px solid #4CAF50; color: #fff; background: rgba(76, 175, 80, 0.2);">Acesse sua
+                Localização</a>
+        </div>
+    </section>
+
+    <footer class="site-footer reveal">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo Guaraná Antarctica" class="footer-logo-img">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Institucional</h3>
+                    <ul>
+                        <li><a href="#">Ambev</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Produtos</h3>
+                    <ul>
+                        <li><a href="#">Guaraná Original</a></li>
+                        <li><a href="#">Guaraná Zero</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Siga-nos</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> AMBEV S.A. - CNPJ: 07.526.557/0001-00. Avenida Renato Monteiro, 1045 - Parte 2 - Resende/RJ - CEP
+                27535-000</p>
+        </div>
+    </footer>
+
+    <!-- MODAL DE CEP -->
+    <div id="cep-modal" class="modal-overlay hidden">
+        <div class="modal-content cep-container-box">
+            <span id="close-cep-modal" class="close-btn">&times;</span>
+            
+            <h2>De onde você está<br>acessando?</h2>
+            <p>Digite seu CEP para descobrirmos a sua localização!</p>
+            
+            <form id="cep-form">
+                <div class="input-group">
+                    <input type="text" id="cep-input" placeholder="Digite seu CEP (Somente números)" maxlength="8" required>
+                    <button type="button" id="btn-buscar-cep">Buscar</button>
+                </div>
+                
+                <div id="endereco-result" class="hidden">
+                    <div class="result-group">
+                        <label>Rua:</label>
+                        <input type="text" id="rua" readonly>
+                    </div>
+                    <div class="result-row">
+                        <div class="result-group half">
+                            <label>Bairro:</label>
+                            <input type="text" id="bairro" readonly>
+                        </div>
+                        <div class="result-group half">
+                            <label>Cidade/UF:</label>
+                            <input type="text" id="cidade-uf" readonly>
+                        </div>
+                    </div>
+                </div>
+                <p id="cep-error" class="error-msg hidden">CEP não encontrado ou inválido.</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+
+</body>
+
+</html>

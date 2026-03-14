@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guaraná Antarctica - Consulta CEP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&family=Montserrat:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="cep-page-body">
+
+    <nav class="top-nav">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo Guaraná Antarctica">
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">VOLTAR</a></li>
+            <li><a href="#">PRODUTOS</a></li>
+            <li><a href="historia.html">HISTÓRIA</a></li>
+            <li><a href="maues.html">MAUÉS, AMAZÔNIA</a></li>
+        </ul>
+    </nav>
+
+    <main class="cep-main-section scene">
+        <img src="img/fundowandinha.png" alt="Fundo Sombrio" class="bg-cep-page parallax-el" data-speed="1">
+        
+        <div class="cep-page-layout">
+            <!-- Esquerda: Títulos -->
+            <div class="cep-left-col reveal">
+                <h1 class="title">A SEDE<br>VOLTOU</h1>
+                <p class="subtitle">Experimente o sabor que<br>desperta até os mortos.</p>
+                <a href="#" class="btn btn-experimente">Experimente agora</a>
+            </div>
+
+            <!-- Direita: Formulário -->
+            <div class="cep-right-col reveal">
+                <div class="cep-container-box">
+                    <h2>De onde você está<br>acessando?</h2>
+                    <p>Digite seu CEP para descobrirmos a sua localização!</p>
+                    
+                    <form id="cep-form">
+                        <div class="input-group">
+                            <input type="text" id="cep-input" placeholder="Digite seu CEP (Somente números)" maxlength="8" required>
+                            <button type="button" id="btn-buscar-cep">Buscar</button>
+                        </div>
+                        
+                        <div id="endereco-result" class="hidden">
+                            <div class="result-group">
+                                <label>Rua:</label>
+                                <input type="text" id="rua" readonly>
+                            </div>
+                            <div class="result-row">
+                                <div class="result-group half">
+                                    <label>Bairro:</label>
+                                    <input type="text" id="bairro" readonly>
+                                </div>
+                                <div class="result-group half">
+                                    <label>Cidade/UF:</label>
+                                    <input type="text" id="cidade-uf" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="cep-error" class="error-msg hidden">CEP não encontrado ou inválido.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mãozinha decorativa -->
+        <img src="img/maozinha.png" alt="Mãozinha" class="maozinha-cep parallax-el float-anim-reverse" data-speed="3">
+    </main>
+
+    <script src="js/script.js" defer></script>
+
+</body>
+
+</html>
